@@ -5,8 +5,14 @@ These files are base script examples to be able to move VM's to a blank/new NSX 
 # Files
 
 Use these in order to extract tag , vm name and vm-id. 
-Replace NSX-T Manager details to suit. 
-Tested against NSX-T API 4.1.2 and python 3.11
+Then push these onto the VM's once they exist with the same name in new environment
+
+Then groups can be extracted and pushed next, as if groups referencetags that arent yet created it will fail
+
+ - Naturally, replace NSX-T Manager details to suit.  
+ - Tested against NSX-T API 4.1.2.3 and python 3.11
+
+**Note:** *The material embodied in this repo is provided to you "as-is" and without warranty of any kind, express, implied or otherwise, including without limitation, any warranty of security and or fitness for a particular purpose. It is an example only, to be used in non-production environments only.*
 
 ## tagspullwithvm.py
 
