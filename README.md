@@ -1,6 +1,6 @@
 # NSX Policy Migration Scripts
 
-These files are base script examples to be able to move VM's to a blank/new NSX Manager environment. They dont move the VM's themselves, but rather store NSX security tag(s) to VM infomation in a CSV, then allow you to play that back at the new environment, applying the tags if the VM name matches. They also do the same with NSX Security Policy Groups. These should be done first, in order, ahead of any DFW export / import as exporting firewall configuration will export only the firewall rules definition but not the groups and other objects.
+These files are base script examples to be able to move VM's to a blank/new NSX Manager environment. They dont move the VM's themselves, but rather store NSX security tag(s) to VM infomation in a CSV, then allow you to play that back at the new environment, applying the tags if the VM name matches. They also do the same with NSX Security Policy Groups. VM's moved, tags should be done next, then groups, in order, ahead of any DFW export / import so dependant objects exist before referencing them. Using NSX's inbuilt DFW *exporting firewall configuration* will export only the firewall rules definition but not the groups and other objects.
 
 # Files
 
