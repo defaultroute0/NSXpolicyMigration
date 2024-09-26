@@ -1,6 +1,6 @@
 # NSX Policy Migration Scripts
 
-These files are base script examples to be able to move VM's to a blank/new NSX Manager environment. They dont move the VM's themselves, but rather store NSX security tag(s) to VM infomation in a CSV, then allow you to play that back at the new environment, applying the tags if the VM name matches, ANother option would be to use HCX and allow it to migrate the NSX Security Tags with the VM itself.
+These files are base script examples to be able to move VM's to a blank/new NSX Manager environment. They dont move the VM's themselves, but rather store NSX security tag(s) to VM infomation in a CSV, then allow you to play that back at the new environment, applying the tags if the VM name matches
 
 # Files
 
@@ -26,7 +26,7 @@ This will use the csv data, and push the tags onto any VM's match on the same **
  - Will overwrite any existing tags which may be applied to the VM
  - Will send multiple tags into VM in one API call
 
-## Example csv 
+## Example csv for tags pull/push 
 
 | Tag Scope | Tag Value | Tag Descr | VM Name | VM ID |
 |--|--|--|--|--|
@@ -34,3 +34,16 @@ This will use the csv data, and push the tags onto any VM's match on the same **
 | security | high999 |  | Kali | 503e0c93-840c-1a9e-f6b3-57a78210a55b |
 | env | prod |  | ubuntu01 | 503e8ea4-d5f5-f667-b703-03bc3aa6a2c6 |
 
+## groupspull.py
+
+Pulls the NSX Security Group and its related matching criteria, tags, ipsets etc
+
+ - Allows exclusion strings
+ - Will ask for groups in single API call, and store them in a csv file
+
+## groupspush.py
+
+Pushes the NSX Security Groups from csv and its related matching criteria, tags, ipsets etc
+
+ - Checks if Group exists by name, if so will skip adding it
+ - The group name may contain spaces etc which API doesnt like, so underscore is added just like adding it via UI anyways
