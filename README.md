@@ -32,7 +32,7 @@ This will use the csv data, and push the tags onto any VM's match on the same **
  - Will overwrite any existing tags which may be applied to the VM
  - Will send multiple tags into VM in one API call
 
-## Example csv for tags pull/push 
+### Example csv for tags pull/push 
 
 | Tag Scope | Tag Value | Tag Descr | VM Name | VM ID |
 |--|--|--|--|--|
@@ -54,7 +54,7 @@ Pushes the NSX Security Groups from csv and its related matching criteria, tags,
  - Checks if Group exists by name, if so will skip adding it
  - The group name may contain spaces etc which API doesnt like, so underscore is added just like adding it via UI anyways
 
-## Example csv for groups pull/push 
+### Example csv for groups pull/push 
 
 | Group Name | Description | Members | Tags |
 |--|--|--|--|
