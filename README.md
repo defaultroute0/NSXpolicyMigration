@@ -12,7 +12,7 @@ Then groups can be extracted and pushed next, as if groups referencetags that ar
  - Naturally, replace NSX-T Manager details to suit.  
  - Tested against NSX-T API 4.1.2.3 and python 3.11
 
-**Note:** *The material embodied in this repo is provided to you "as-is" and without warranty of any kind, express, implied or otherwise, including without limitation, any warranty of security and or fitness for a particular purpose. It is an example only, to be used in non-production environments only.*
+**Note:** *The material embodied in this repo is provided to you "as-is" and without warranty of any kind, express, implied or otherwise, including without limitation, any warranty of security and or fitness for a particular purpose. It is an example only, to be used in lab environments only.*
 
 ## tagspullwithvm.py
 
