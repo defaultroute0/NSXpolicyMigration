@@ -34,7 +34,7 @@ This will use the csv data, and push the tags onto any VM's match on the same **
 
 ### Example csv for tags pull/push 
  - Example file attached in repo
- - 
+   
 | Tag Scope | Tag Value | Tag Descr | VM Name | VM ID |
 |--|--|--|--|--|
 | security | high888 |  | Kali | 503e0c93-840c-1a9e-f6b3-57a78210a55b |
