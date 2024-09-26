@@ -6,7 +6,7 @@ from urllib.parse import quote
 # NSX-T Manager details
 NSX_MANAGER = 'nsxm.vcnlab01.eng.vmware.com'
 USERNAME = 'admin'
-PASSWORD = 'VMware1!2229'
+PASSWORD = 'XXXX'
 
 # Disable SSL warnings if using self-signed certificates (optional)
 requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
