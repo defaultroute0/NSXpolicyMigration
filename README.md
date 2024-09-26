@@ -1,6 +1,6 @@
 # NSX Policy Migration Scripts
 
-These files are base script examples to be able to move VM's to a blank/new NSX Manager environment. They dont move the VM's themselves, but rather store NSX security tag(s) to VM infomation in a CSV, then allow you to play that back at the new environment, applying the tags if the VM name matches
+These files are base script examples to be able to move VM's to a blank/new NSX Manager environment. They dont move the VM's themselves, but rather store NSX security tag(s) to VM infomation in a CSV, then allow you to play that back at the new environment, applying the tags if the VM name matches, ANother option would be to use HCX and allow it to migrate the NSX Security Tags with the VM itself.
 
 # Files
 
