@@ -59,7 +59,7 @@ Pulls the NSX Security Group and its related matching criteria, tags, ipsets etc
 Pushes the NSX Security Groups from csv and its related matching criteria, tags, ipsets etc
 
  - Checks if Group exists by name, if so will skip adding it
- - The group name may contain spaces etc which API doesnt like, so underscore is added just like adding it via UI anyways
+ - The group name may contain spaces etc which API doesnt like when translating it to a group-id, so underscore is added for group-id, just like adding it via UI anyways. (See Ping Test group below as an example)
 
 ### Example csv for groups pull/push 
  - Example file attached in repo
