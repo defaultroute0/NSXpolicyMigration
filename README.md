@@ -4,8 +4,8 @@ These files are base script examples to be able to move VM's to a blank/new NSX 
 
 
 Other work in progress not done yet...
-- pull/push the non-default services l4 (not create user: system)
-- pull/push the non-default service context profiles l7 (not create user: system)
+- pull/push the non-default services l4 ('not' created by user: system)
+- pull/push the non-default service context profiles l7 ('not' created by user: system)
 - finally pull/push the actual DFW rules that consumer all the above
 
 # Files
